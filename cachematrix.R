@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 
 ## This function creates a special "matrix" object that can cache its inverse
 
@@ -15,9 +12,6 @@ makeCacheMatrix <- function(x = matrix()) {
     ## being assigned.
     ## If such a variable is found (and its binding is not locked) then its value is redefined, 
     ## otherwise assignment takes place in the global environment.
-    ## Note that their semantics differ from that in the S language, but are useful in conjunction 
-    ## with the scoping rules of R.
-    ## See The R Language Definition manual for further details and examples. 
     x <<- y
     
     ## restores to null the value of the --inverse matrix--,
